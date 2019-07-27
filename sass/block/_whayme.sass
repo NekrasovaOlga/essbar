@@ -1,0 +1,58 @@
+.whayme
+    margin-top: 40px
+    &_title
+        font-family: 'Montserrat'
+        font-size: 30px
+        font-weight: bold
+        color: #000000
+        margin-bottom: 40px
+        height: 40px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: auto
+        position: relative
+        width: 40%
+        &:before
+            content: " "
+            position: absolute
+            width: 50%
+            height: 3px
+            left: 0
+            top: -10px
+            background: #A5FF00
+        &:after
+            content: " "
+            position: absolute
+            width: 50%
+            height: 3px
+            right: 0
+            bottom: -10px
+            background: #A5FF00
+        span
+            font-family: 'Lobster',serif
+        &_text
+            width: 50%
+            margin: auto
+            font-family: 'Roboto', serif
+            text-align: center
+            margin-top: 50px
+            font-size: 18px
+            font-weight: normal
+            line-height: 20px
+    &_best
+        display: flex
+        justify-content: space-between
+        margin-top: 50px
+        font-family: 'Roboto', serif
+        font-size: 16px
+        text-align: center
+        font-weight: normal
+        line-height: 20px
+        margin-bottom: 40px
+        &_item
+            width: 280px
+            &_title
+                margin-bottom: 10px
+                font-size: 18px
+                font-family: 'Montserrat'

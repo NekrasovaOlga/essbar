@@ -1,0 +1,62 @@
+header
+    background: #000000
+    height: 30px
+    position: relative
+
+.nav
+    padding-top: 20px
+    display: flex
+    width: 100%
+    height: 60px
+    font-family: 'Roboto', serif
+    align-items: center
+    justify-content: space-between
+    
+    &_logo
+        display: flex
+        font-family: 'Lobster',serif
+        color: #ffffff
+        font-size: 40px
+        align-items: center
+
+    &_menu
+        display: flex
+        width: 40%
+        justify-content: space-between
+        &_list
+            text-decoration: none
+            color: #ffffff
+            font-style: 16px
+            text-transform: uppercase
+            position: relative
+            
+            &:after
+                content: " "
+                width: 0%
+                height: 3px
+                position: absolute
+                background: #A5FF00
+                left: 0
+                bottom: -10px
+                display: blocks
+                transition: 0.3s
+
+.nav_menu_list:hover
+     color: #A5FF00
+     &:after
+        display: block
+        width: 100%
+
+
+
+@media (max-width:1200px) and (min-width: 930px)
+    .nav
+      &_menu
+        width: 50%
+        &_list
+            font-size: 1em
+
+@media (max-width: 929px)
+    .nav
+      &_menu
+        display: none

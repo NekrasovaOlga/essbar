@@ -1,0 +1,243 @@
+.calls
+    width: 100%
+    margin-top: 40px
+    color: #ffffff
+    background: #000000 url('../img/fruit.png') no-repeat left center
+.cl
+    display: flex
+    width: 100%
+    justify-content: flex-end
+.call
+    width: 50%
+    display: flex
+    justify-content: center
+    align-self: flex-end
+    flex-direction: column
+    
+    h1
+        font-family: 'Montserrat'
+        font-size: 30px
+        font-weight: bold
+        color: #A5FF00
+        height: 40px
+        display: flex
+        justify-content: space-around
+        align-items: center
+        position: relative  
+        margin-top: 40px
+    &_text
+        font-family: 'Roboto', serif
+        font-size: 16px
+        color: #ffffff
+        font-weight: normal
+        line-height: 20px
+        display: flex
+        text-align: center
+        margin: 20px auto
+    &_input
+        display: flex
+        flex-direction: column
+        input
+            height: 44px
+            width: 270px
+            outline: none
+            padding: 5px 10px
+            font-size: 16px
+            font-family: 'Roboto', serif
+            border-radius: 5px
+            background: #F6F6F6
+            box-shadow: inset 1px 1px 5px 0 #cccccc
+            border: none
+    &_textarea
+        width: 250px
+        padding: 15px 20px
+        font-size: 16px
+        font-family: 'Roboto', serif
+        border-radius: 5px
+        background: #F6F6F6
+        box-shadow: inset 1px 1px 5px 0 #cccccc
+        border: none
+    &_form
+        display: flex
+        justify-content: space-around
+    &_button
+        display: flex
+        justify-content: space-around
+        margin-top: 20px 
+        width: 100%
+        margin-bottom: 40px
+    &_btn
+        color: #A5FF00
+        border: 2px solid #A5FF00
+        background: none
+        padding: 18px 14px
+        width: 280px
+        margin-left: 20px
+        border-radius: 40px
+        font-family: 'Montserrat'
+        font-size: 20px
+        font-weight: bold
+        transition: 0.5s
+        position: relative
+        
+
+        &:hover
+            background: #A5FF00
+            color: #000000
+
+    &_number
+        display: flex
+        flex-direction: column
+        justify-content: center
+        width: 50%
+    &_tel
+        font-family: 'Montserrat'
+        font-size: 25px
+        font-weight: bold
+        margin-bottom: 10px
+        text-align: center
+    &_txt
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+    
+.text
+    margin-bottom: 20px
+
+
+@media (max-width:1200px) and (min-width: 1061px)
+    .calls
+        background-position-x: -120px
+    .call
+        width: 65%
+       
+        &_text
+            margin: 20px auto
+        &_button
+            justify-content: space-around
+        &_textarea
+            width: 45%
+        &_btn
+            width: 40%
+        &_number
+            width: 50%
+        &_input
+            width: 45%
+            input
+                position: relative
+                width: 90%
+
+
+@media (max-width:1060px) and (min-width: 876px)
+    .calls
+        background-position-x: -250px
+    .call
+        width: 70%
+       
+        &_text
+            margin: 20px 7px
+        &_button
+            justify-content: space-between
+        &_textarea
+            width: 45%
+        &_btn
+            width: 40%
+            font-size: 1em
+        &_number
+            width: 50%
+        &_input
+            width: 45%
+            input
+                position: relative
+                width: 90%
+                
+@media (max-width:875px) and (min-width: 760px)
+    .calls
+        background-position-x: -350px
+    .call
+        width: 80%
+       
+        &_text
+            margin: 20px 7px
+        &_button
+            justify-content: space-between
+        &_textarea
+            width: 45%
+        &_btn
+            width: 40%
+            font-size: 1em
+        &_number
+            width: 50%
+        &_input
+            width: 45%
+            input
+                position: relative
+                width: 90%
+    
+@media (max-width:759px) and (min-width: 563px)
+    .calls
+        background: url('../img/fruit2.jpg') no-repeat left center
+        background-size: cover
+    .call
+        width: 100%
+       
+        &_text
+            margin: 20px auto
+        &_button
+            justify-content: space-around
+        &_textarea
+            width: 45%
+        &_form
+            justify-content: space-between
+        &_btn
+            width: 40%
+            font-size: 1em
+            margin-left: 0
+        &_number
+            width: 50%
+        &_input
+            width: 50%
+            margin-left: 0
+            input
+                position: relative
+                width: 90%
+                
+    br
+        display: none
+@media (max-width:562px) and (min-width: 319px)
+    .calls
+        background: url('../img/fruit2.jpg') no-repeat left center
+        background-size: cover
+    .call
+        width: 100%
+        h1
+            font-size: 1.5em
+            font-family: 'Roboto'
+
+        &_text
+            margin: 20px auto
+        &_button
+            justify-content: space-around
+        &_textarea
+            width: 86%
+            height: 100px
+            margin-top: 20px
+        &_form
+            flex-direction: column
+            width: 100%
+        &_btn
+            width: 80%
+            font-size: 1em
+            margin-left: 0
+        &_number
+            display: none
+        &_input
+            width: 100%
+            margin-left: 0
+            input
+                position: relative
+                width: 90%
+                
+    br
+        display: none

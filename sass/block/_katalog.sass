@@ -1,0 +1,187 @@
+.katalogs
+    margin-top: 40px
+.katalog_title
+    font-family: 'Montserrat'
+    font-size: 30px
+    font-weight: bold
+    color: #000000
+    margin-bottom: 40px
+    height: 40px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: auto
+    position: relative
+    width: 250px
+    &:before
+        content: " "
+        position: absolute
+        width: 50%
+        height: 3px
+        left: 0
+        top: -10px
+        background: #A5FF00
+    &:after
+        content: " "
+        position: absolute
+        width: 50%
+        height: 3px
+        right: 0
+        bottom: -10px
+        background: #A5FF00
+.katalog
+    display: flex
+    flex-wrap: wrap
+    margin-top: 20px
+    width: 100%
+    justify-content: space-between
+    &_pr
+        display: flex
+        justify-content: space-between
+        margin: 30px 10px
+        font-size: 18px
+        align-items: center
+    &_txt
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+    &_item
+        width: 280px
+        box-shadow: 1px 1px 5px 0 #bebebe
+        border-radius: 10px
+        position: relative
+        margin-top: 20px
+        &_title
+            font-weight: bold
+            font-family: 'Montserrat'
+            font-size: 14px
+        &_img
+            width: 100%
+            position: relative
+            height: 250px
+            overflow: hidden
+            img
+                width: 100%
+                border-radius: 10px 10px 0 0 
+           
+        &_text
+            margin: 0 10px
+            font-size: 16px
+            font-weight: normal
+            line-height: 20px
+            height: 80px
+        &_btn
+            width: 80%
+            margin: 20px auto
+            font-family: 'Montserrat'
+            font-size: 20px
+            font-weight: bold
+            border: none
+            background: linear-gradient(to bottom, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%)
+            box-shadow: 3px 3px 7px 0 #ccc
+            padding: 18px 14px
+            border-radius: 25px
+            position: relative
+            overflow: hidden
+            &:before
+                content: ' '
+                position: absolute
+                top: 0
+                left: 0
+                width: 40px
+                height: 4em
+                background: rgba(#fff, 0.6)
+                transform: translateX(-4em) skewX(-45deg)
+            &:hover:before
+                    animation: move-light 1.5s infinite       
+    
+.price
+    font-weight: bold
+    font-family: 'Montserrat'
+
+@keyframes move-light
+  0%
+    transform: translateX(-4em) skewX(-45deg)
+  100%
+    transform: translateX(12em) skewX(-45deg)
+   
+
+@media (max-width:1200px) and (min-width: 1061px)
+    .katalog
+        
+        &_item
+            width: 23%
+            height: 100%
+        &_title
+           
+
+@media (max-width:1060px) and (min-width: 760px)
+    .katalog
+        justify-content: space-around
+        &_pr
+           
+        &_item
+            width: 32%
+
+@media (max-width:759px) and (min-width: 550px)
+    .katalog
+        justify-content: space-around
+        &_pr
+           
+        &_item
+            width: 48%
+
+@media (max-width:549px) and (min-width: 426px)
+     .katalog
+        justify-content: center
+        flex-wrap: none
+        flex-direction: column
+        &_pr
+          flex-direction: column
+          width: 50%
+          align-items: flex-start
+        &_item
+            width: 100%
+
+            &_img
+                height: 300px
+            &_title
+                font-size: 1em
+            &_text
+                display: none
+            &_btn
+                width: 50%
+            &_price
+                font-size: 1.2em
+                margin-top: 7px
+                font-weight: 1000
+        &_txt
+            display: flex
+            flex-direction: row
+@media (max-width:425px) and (min-width: 319px)
+    .katalog
+        justify-content: center
+        flex-wrap: none
+        flex-direction: column
+        &_pr
+          width: 100%
+          align-items: center
+          justify-content: space-around
+        &_item
+            width: 100%
+
+            &_img
+                height: 300px
+            &_title
+                font-size: 1em
+            &_text
+                display: none
+            &_btn
+                width: 100%
+            &_price
+                font-size: 1.2em
+                font-weight: 1000
+        &_txt
+            display: flex
+            flex-direction: column

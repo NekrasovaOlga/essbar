@@ -1,0 +1,198 @@
+.insta
+    width: 100%
+    margin-top: 40px
+    color: #ffffff
+    background: #000000 
+.instagram_cont
+    display: flex
+    width: 100%
+    justify-content: center
+
+.instagram
+    display: flex
+    flex-direction: column
+    margin-top: 40px
+    &_title
+        font-family: 'Montserrat'
+        font-size: 30px
+        font-weight: bold
+        color: #ffffff
+        margin-bottom: 40px
+        height: 40px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: auto
+        position: relative
+        width: 50%
+        &:before
+            content: " "
+            position: absolute
+            width: 50%
+            height: 3px
+            left: 0
+            top: -10px
+            background: #A5FF00
+        &:after
+            content: " "
+            position: absolute
+            width: 50%
+            height: 3px
+            right: 0
+            bottom: -10px
+            background: #A5FF00
+    &_text
+        margin-top: 40px
+        margin-bottom: 40px
+        font-family: 'Roboto'
+        font-size: 18px
+        color: #ffffff
+        font-weight: normal
+        line-height: 20px
+        text-align: center
+    &_gallery
+        display: flex
+        flex-wrap: wrap
+        width: 100%
+        justify-content: space-between
+        &_img
+            width: 270px
+            height: 270px
+            margin-top: 20px
+            overflow: hidden
+            
+            img
+                width: 100%
+                overflow: hidden
+    &_btn
+        
+        background: none
+        color: #A5FF00  
+        border: 2px solid #A5FF00
+        padding: 18px 14px
+        width: 60%
+        margin: 60px auto
+        border-radius: 40px
+        font-family: 'Montserrat'
+        font-size: 20px
+        font-weight: bold
+        transition: 0.5s
+        &:hover
+            color: #000000
+            border: 2px solid #A5FF00
+            background: #A5FF00
+        
+@media (max-width:1200px) and (min-width: 1061px)  
+    .instagram
+        &_title 
+            width: 60%
+        &_gallery
+            display: flex
+            flex-wrap: wrap
+            width: 100%
+            justify-content: space-between
+            &_img
+                width: 25%
+                height: auto
+                
+                    
+                    
+
+@media (max-width:1060px) and (min-width: 760px)
+    .instagram
+      
+        &_title 
+            width: 80%
+        &_gallery
+            display: flex
+            flex-wrap: wrap
+            width: 100%
+            justify-content: space-around
+            &_img
+                width: 30%
+                height: auto
+        &_btn
+            width: 70%
+    .in_block
+        display: none
+
+@media (max-width:759px) and (min-width: 677px)
+    .instagram
+      
+        &_title 
+            width: 100%
+        &_gallery
+            display: flex
+            flex-wrap: wrap
+            width: 100%
+            justify-content: space-around
+            &_img
+                width: 30%
+                height: auto
+        &_btn
+            width: 80%
+            font-size: 1em
+    .in_block
+        display: none
+
+
+@media (max-width:676px) and (min-width: 500px)
+    .instagram
+      
+        &_title 
+            width: 100%
+        &_gallery
+            display: flex
+            flex-wrap: wrap
+            width: 100%
+            justify-content: space-around
+            &_img
+                width: 45%
+                height: auto
+        &_btn
+            width: 80%
+            font-size: 1em
+    .in_block
+        display: none
+
+@media (max-width:549px) and (min-width: 447px)
+    .instagram
+      
+        &_title 
+            width: 100%
+            font-size: 1.5em
+        &_gallery
+            display: flex
+            flex-wrap: wrap
+            width: 100%
+            justify-content: space-around
+            &_img
+                width: 49%
+                height: auto
+        &_btn
+            width: 100%
+            font-size: 1em
+    .in_block
+        display: none
+    
+@media (max-width:446px) and (min-width: 319px)
+    .instagram
+      
+        &_title 
+            width: 100%
+            font-size: 1.4em
+            font-family: 'Roboto'
+            text-align: center
+        &_gallery
+            display: flex
+            flex-wrap: wrap
+            width: 100%
+            justify-content: space-around
+            &_img
+                width: 100%
+        &_btn
+            width: 100%
+            font-size: 0.9em
+    .in_block
+        display: none
+    

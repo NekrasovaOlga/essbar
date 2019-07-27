@@ -1,0 +1,75 @@
+.rewiew
+    display: flex
+    width: 100%
+    justify-content: center
+    margin-top: 40px
+.reviews
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 50%
+    &_title
+        font-family: 'Montserrat'
+        font-size: 30px
+        font-weight: bold
+        color: #000000
+        margin-bottom: 40px
+        height: 40px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: auto
+        position: relative
+        width: 250px
+        &:before
+            content: " "
+            position: absolute
+            width: 50%
+            height: 3px
+            left: 0
+            top: -10px
+            background: #A5FF00
+        &:after
+            content: " "
+            position: absolute
+            width: 50%
+            height: 3px
+            right: 0
+            bottom: -10px
+            background: #A5FF00
+    &_img
+        display: flex
+        justify-content: center
+        margin-top: 50px
+        margin-bottom: 20px
+        img
+            width: 20%
+    &_name
+        display: flex
+        justify-content: space-around
+        font-family: 'Roboto', serif
+        font-size: 20px
+        color: #000000
+        font-weight: bold
+        line-height: 20px
+        width: 60%
+        margin: auto
+    &_txt
+        margin-top: 20px
+        font-family: 'Roboto'
+        font-size: 16px
+        color: #000000
+        font-weight: normal
+        line-height: 20px
+        text-align: center
+
+@media (max-width:1200px) and (min-width: 1061px)   
+    .reviews
+        width: 70%
+
+@media (max-width:1060px) and (min-width: 760px)
+    .reviews
+        width: 70%
+@media (max-width:759px) and (min-width: 0px)
+    .reviews
+        width: 100%
