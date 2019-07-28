@@ -126,14 +126,15 @@ header {
 
 @media (max-width: 809px) and (min-width: 421px) {
   .nav {
-    margin-bottom: 80px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .nav_title {
-    font-size: 2em;
-    margin-bottom: 80px;
+  .nav_logo {
+    font-size: 1.7em;
+  }
+  .nav_logo img {
+    width: 40px;
   }
 }
 
