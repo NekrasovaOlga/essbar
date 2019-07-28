@@ -125,7 +125,7 @@ header {
 }
 
 @media (max-width: 759px) and (min-width: 421px) {
-  .nav_logo {
+  .nav_title {
     font-size: 2em;
   }
 }
@@ -547,7 +547,7 @@ header {
     background-position-x: -100px;
   }
   .hero_holder {
-    margin-top: 80px;
+    margin-top: 40px;
     width: 100%;
   }
   .hero_title {
@@ -563,7 +563,7 @@ header {
 
 @media (max-width: 420px) and (min-width: 319px) {
   .hero {
-    background: url("../img/body2.jpg") no-repeat;
+    background: #000000 url("../img/body2.jpg") no-repeat;
     background-size: cover;
     background-position-x: -100px;
   }
