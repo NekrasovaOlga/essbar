@@ -530,6 +530,7 @@ header {
     background-position-x: 220px;
   }
   .hero_holder {
+    margin-top: 60px;
     width: 70%;
   }
   .hero_title {
@@ -576,6 +577,7 @@ header {
     background-position-x: -100px;
   }
   .hero_holder {
+    margin-top: 60px;
     width: 100%;
   }
   .hero_title {
