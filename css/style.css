@@ -124,9 +124,16 @@ header {
   }
 }
 
-@media (max-width: 759px) and (min-width: 421px) {
+@media (max-width: 809px) and (min-width: 421px) {
+  .nav {
+    margin-bottom: 80px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
   .nav_title {
     font-size: 2em;
+    margin-bottom: 80px;
   }
 }
 
