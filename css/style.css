@@ -124,6 +124,12 @@ header {
   }
 }
 
+@media (max-width: 759px) and (min-width: 421px) {
+  .nav_logo {
+    font-size: 2em;
+  }
+}
+
 .katalogs {
   margin-top: 40px;
 }
@@ -536,11 +542,12 @@ header {
 
 @media (max-width: 759px) and (min-width: 421px) {
   .hero {
-    background: url("../img/body2.jpg") no-repeat top left;
+    background: #000000 url("../img/body2.jpg") no-repeat top left;
     background-size: cover;
     background-position-x: -100px;
   }
   .hero_holder {
+    margin-top: 80px;
     width: 100%;
   }
   .hero_title {
