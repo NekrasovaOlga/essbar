@@ -1032,12 +1032,11 @@ header {
           justify-content: center;
   margin-top: 50px;
   margin-bottom: 20px;
-  width: 20%;
+  width: 100%;
 }
 
 .reviews_img img {
-  width: 100%;
-  height: auto;
+  width: 20%;
 }
 
 .reviews_name {
