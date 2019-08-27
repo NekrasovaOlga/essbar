@@ -1,7 +1,6 @@
 body {
   font-family: 'Roboto';
 }
-
 .content {
   max-width: 1200px;
   width: 100%;
@@ -1001,7 +1000,7 @@ header {
   margin: auto;
   position: relative;
   width: 250px;
-  margin-top: 50px;
+  
 }
 
 .reviews_title:before {
@@ -1056,7 +1055,7 @@ header {
 }
 
 .reviews_txt {
-  margin-top: 20px;
+  margin-top: 50px;
   font-family: 'Roboto';
   font-size: 16px;
   color: #000000;
