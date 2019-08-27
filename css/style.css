@@ -1001,6 +1001,7 @@ header {
   margin: auto;
   position: relative;
   width: 250px;
+  margin-top: 50px;
 }
 
 .reviews_title:before {
@@ -1030,7 +1031,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 50px;
+  
   margin-bottom: 20px;
   width: 100%;
 }
