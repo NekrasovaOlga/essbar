@@ -1,9 +1,11 @@
 body {
   font-family: 'Roboto';
 }
+
 .content {
   max-width: 1200px;
   width: 100%;
+  margin: auto;
 }
 
 body::-webkit-scrollbar {
@@ -1000,7 +1002,6 @@ header {
   margin: auto;
   position: relative;
   width: 250px;
-  
 }
 
 .reviews_title:before {
@@ -1024,19 +1025,18 @@ header {
 }
 
 .reviews_img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  
+  margin-top: 50px;
   margin-bottom: 20px;
   width: 100%;
 }
 
 .reviews_img img {
   width: 20%;
+  height: auto;
 }
 
 .reviews_name {
@@ -1052,10 +1052,11 @@ header {
   line-height: 20px;
   width: 60%;
   margin: auto;
+  margin-top: 50px;
 }
 
 .reviews_txt {
-  margin-top: 50px;
+  margin-top: 20px;
   font-family: 'Roboto';
   font-size: 16px;
   color: #000000;
